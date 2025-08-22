@@ -92,7 +92,7 @@ class PlannerAgent(BaseAgent):
             AgentType.EVENT_PLANNER.value,
             AgentType.TECH_SUPPORT.value,
             AgentType.GENERIC.value,
-        ]
+        ] 
         self._agent_tools_list = {
             AgentType.HR: HrTools.generate_tools_json_doc(),
             AgentType.MARKETING: MarketingTools.generate_tools_json_doc(),
