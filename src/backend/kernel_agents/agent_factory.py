@@ -18,7 +18,7 @@ from kernel_agents.human_agent import HumanAgent
 from kernel_agents.marketing_agent import MarketingAgent
 from kernel_agents.planner_agent import PlannerAgent  # Add PlannerAgent import
 from kernel_agents.procurement_agent import ProcurementAgent
-from kernel_agents.event_planner_agent import EventPlannerAgent
+# from kernel_agents.event_planner_agent import EventPlannerAgent
 from kernel_agents.product_agent import ProductAgent
 from kernel_agents.tech_support_agent import TechSupportAgent
 from models.messages_kernel import AgentType, PlannerResponsePlan
@@ -37,7 +37,7 @@ class AgentFactory:
         AgentType.MARKETING: MarketingAgent,
         AgentType.PRODUCT: ProductAgent,
         AgentType.PROCUREMENT: ProcurementAgent,
-        AgentType.EVENT_PLANNER: EventPlannerAgent,  # Add EventPlannerAgent
+        # AgentType.EVENT_PLANNER: EventPlannerAgent,  # Add EventPlannerAgent
         AgentType.TECH_SUPPORT: TechSupportAgent,
         AgentType.GENERIC: GenericAgent,
         AgentType.HUMAN: HumanAgent,
@@ -51,7 +51,7 @@ class AgentFactory:
         AgentType.MARKETING: AgentType.MARKETING.value,
         AgentType.PRODUCT: AgentType.PRODUCT.value,
         AgentType.PROCUREMENT: AgentType.PROCUREMENT.value,
-        AgentType.EVENT_PLANNER: AgentType.EVENT_PLANNER.value,
+        # AgentType.EVENT_PLANNER: AgentType.EVENT_PLANNER.value,
         AgentType.TECH_SUPPORT: AgentType.TECH_SUPPORT.value,
         AgentType.GENERIC: AgentType.GENERIC.value,
         AgentType.HUMAN: AgentType.HUMAN.value,
@@ -65,7 +65,7 @@ class AgentFactory:
         AgentType.MARKETING: MarketingAgent.default_system_message(),
         AgentType.PRODUCT: ProductAgent.default_system_message(),
         AgentType.PROCUREMENT: ProcurementAgent.default_system_message(),
-        AgentType.EVENT_PLANNER: EventPlannerAgent.default_system_message(),
+        # AgentType.EVENT_PLANNER: EventPlannerAgent.default_system_message(),
         AgentType.TECH_SUPPORT: TechSupportAgent.default_system_message(),
         AgentType.GENERIC: GenericAgent.default_system_message(),
         AgentType.HUMAN: HumanAgent.default_system_message(),
